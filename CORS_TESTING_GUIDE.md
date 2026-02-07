@@ -12,13 +12,13 @@ Your CORS issue is now resolved. Here's what was configured:
 ## Testing Your Production Deployment
 
 ### Test URL
-- **New Deployment:** `https://shopify-sync-framer-5m5wsghkb-madebypixels-projects.vercel.app`
+- **New Deployment:** `https://shopify-sync-framer-eight.vercel.app`
 - **API Endpoint:** `/api/shopify-proxy`
 
 ### Step 1: Verify CORS Headers are Present
 Run this curl command to test the preflight:
 ```bash
-curl -X OPTIONS "https://shopify-sync-framer-5m5wsghkb-madebypixels-projects.vercel.app/api/shopify-proxy" \
+curl -X OPTIONS "https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy" \
   -H "Origin: https://localhost:4173" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Content-Type" \
@@ -36,7 +36,7 @@ Access-Control-Max-Age: 86400
 ### Step 2: Test API Endpoint in Browser Console
 Open your browser console and run:
 ```javascript
-fetch('https://shopify-sync-framer-5m5wsghkb-madebypixels-projects.vercel.app/api/shopify-proxy', {
+fetch('https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({

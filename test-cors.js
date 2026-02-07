@@ -4,7 +4,7 @@
  * CORS Test Script - Verifies the API endpoint has proper CORS headers
  */
 
-const API_URL = "https://shopify-sync-framer-5m5wsghkb-madebypixels-projects.vercel.app/api/shopify-proxy"
+const API_URL = "https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy"
 
 async function testCORS() {
     console.log("🧪 Testing CORS configuration...\n")

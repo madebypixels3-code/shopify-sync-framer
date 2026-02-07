@@ -135,7 +135,7 @@ Scenario: Browser sends preflight + actual request
 
 ### Test 1: Verify CORS Headers
 ```bash
-curl -X OPTIONS "https://shopify-sync-framer.vercel.app/api/shopify-proxy" \
+curl -X OPTIONS "https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy" \
   -H "Origin: https://localhost:4173" \
   -H "Access-Control-Request-Method: POST" \
   -H "Access-Control-Request-Headers: Content-Type"
@@ -151,7 +151,7 @@ Access-Control-Max-Age: 86400
 
 ### Test 2: Browser Console Test
 ```javascript
-fetch('https://shopify-sync-framer.vercel.app/api/shopify-proxy', {
+fetch('https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({

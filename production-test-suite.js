@@ -7,7 +7,7 @@
 
 import https from "https"
 
-const API_URL = "https://shopify-sync-framer-5m5wsghkb-madebypixels-projects.vercel.app"
+const API_URL = "https://shopify-sync-framer-eight.vercel.app"
 const TESTS = []
 
 // Test results accumulator

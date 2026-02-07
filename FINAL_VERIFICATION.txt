@@ -84,7 +84,7 @@ Recent Commits:
 
 Vercel Deployment:
   ✅ Status: Deployed & Active
-  ✅ Endpoint: shopify-sync-framer.vercel.app/api/shopify-proxy
+  ✅ Endpoint: shopify-sync-framer-eight.vercel.app/api/shopify-proxy
   ✅ Last Deploy: February 7, 2026 11:24 UTC
   ✅ Function: api/shopify-proxy.js
 
@@ -118,7 +118,7 @@ HOW TO TEST IN PRODUCTION
 
 Option 1: Browser Console
 ────────────────────────
-fetch('https://shopify-sync-framer.vercel.app/api/shopify-proxy', {
+fetch('https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -140,7 +140,7 @@ node production-test-suite.js
 
 Option 3: CURL Test
 ──────────────────
-curl -X OPTIONS "https://shopify-sync-framer.vercel.app/api/shopify-proxy" \
+curl -X OPTIONS "https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy" \
   -H "Origin: https://localhost:4173" \
   -H "Access-Control-Request-Method: POST" \
   -i
@@ -273,7 +273,7 @@ FINAL STATUS
 
 Report Generated: February 7, 2026
 Deployment URL: https://github.com/madebypixels3-code/shopify-sync-framer
-Vercel Endpoint: https://shopify-sync-framer.vercel.app/api/shopify-proxy
+Vercel Endpoint: https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy
 
 Questions? See the documentation files or check GitHub commits.
 

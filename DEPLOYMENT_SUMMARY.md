@@ -10,7 +10,7 @@ Your Shopify Sync Framer plugin is now **fully production-ready** with CORS issu
 
 ### The Problem
 ```
-CORS Error: "Access to fetch at 'https://shopify-sync-framer.vercel.app/api/shopify-proxy' 
+CORS Error: "Access to fetch at 'https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy' 
 has been blocked by CORS policy"
 ```
 
@@ -46,7 +46,7 @@ has been blocked by CORS policy"
 ### Option 1: Quick Browser Test
 Open browser console and run:
 ```javascript
-fetch('https://shopify-sync-framer.vercel.app/api/shopify-proxy', {
+fetch('https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
@@ -97,7 +97,7 @@ X-Content-Type-Options: nosniff
 - **Status:** All changes pushed and deployed
 
 ### Live Endpoint
-- **URL:** `https://shopify-sync-framer.vercel.app/api/shopify-proxy`
+- **URL:** `https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy`
 - **Method:** POST
 - **Status:** ✅ Active & Ready
 
@@ -150,7 +150,7 @@ In your Framer component, you can now use:
 
 ```typescript
 // This will work without CORS errors
-const response = await fetch('https://shopify-sync-framer.vercel.app/api/shopify-proxy', {
+const response = await fetch('https://shopify-sync-framer-eight.vercel.app/api/shopify-proxy', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
