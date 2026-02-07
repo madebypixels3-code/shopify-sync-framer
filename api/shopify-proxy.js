@@ -5,17 +5,17 @@ import fetch from "node-fetch"
  * Handles OAuth token exchange for Shopify Client Credentials Grant flow
  */
 export default async function handler(req, res) {
-    // Set CORS headers immediately
+    // CRITICAL: Set CORS headers FIRST before any other processing
     res.setHeader("Access-Control-Allow-Origin", "*")
     res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS, PATCH")
     res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization, Accept")
     res.setHeader("Access-Control-Max-Age", "86400")
     res.setHeader("Vary", "Origin")
+    res.setHeader("X-Content-Type-Options", "nosniff")
 
-    // Handle preflight requests
+    // Handle preflight requests - return immediately after headers
     if (req.method === "OPTIONS") {
-        res.status(200).end()
-        return
+        return res.status(200).end()
     }
 
     if (req.method !== "POST") {
