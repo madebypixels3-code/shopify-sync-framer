@@ -1,0 +1,6 @@
+
+> shopify-sync-framer@1.0.0 server
+> node server.js
+
+Shopify Sync proxy server listening on http://localhost:3001
+CORS enabled for all origins

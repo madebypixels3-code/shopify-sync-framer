@@ -1,0 +1,21 @@
+{
+  "name": "shopify-sync-framer",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "npm run server & npm --prefix shopify-sync-cms run dev",
+    "server": "node server.js",
+    "build": "npm --prefix shopify-sync-cms run build",
+    "build:prod": "npm --prefix shopify-sync-cms run build:prod",
+    "preview": "npm --prefix shopify-sync-cms run preview",
+    "pack": "npm --prefix shopify-sync-cms run pack",
+    "deploy": "vercel --prod",
+    "deploy:preview": "vercel"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.2.1",
+    "node-fetch": "^2.7.0"
+  }
+}
